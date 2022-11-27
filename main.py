@@ -43,7 +43,7 @@ def generate_platform_html(identifier):
         size = value["size"]
         md5 = value["md5"]
         buff.write(
-            f'<tr><td><a href="https://archive.org/download/nointro.gb{name}">{clean_name}</a></td><td>{size}</td><td>{md5}</td></tr>\n'
+            f'<tr><td><a href="https://archive.org/download/{identifier}{name}">{clean_name}</a></td><td>{size}</td><td>{md5}</td></tr>\n'
         )
 
     with open("template.html") as file:
