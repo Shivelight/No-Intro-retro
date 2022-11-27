@@ -60,7 +60,7 @@ index_html_template = """
 """
 links_buff = StringIO()
 for k, v in platforms_dict.items():
-    # generate_platform_html(v)
+    generate_platform_html(v)
     links_buff.write(f'<a href="{v}.html">{k}</a><br>')
 
 with open(f"index.html", "w") as file:
